@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.product-img{
+    margin-right: 40px;
+    float: left;
+}
+
+.product-info{
+    width: 243px;
+    float: left;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.price{
+    float: left;
+}
+
+.shipping{
+    float: right;
+    margin-top: 8px;
+}
+
+.product-details{
+    margin-top: 20px;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.product-description{
+    clear: both;
+    margin-bottom: 10px;
+}

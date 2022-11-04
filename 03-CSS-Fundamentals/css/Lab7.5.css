@@ -1,0 +1,48 @@
+.product{
+    position: relative;
+}
+
+.sale{
+    background-color: #ec2f2f;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 7px 15px;
+    display: inline-block;
+    position: absolute;
+    top: -17px;
+    left: -38px;
+
+}
+
+.color{
+    background-color: #000;
+    height: 22px;
+    width: 22px;
+
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.color-blue{
+    background-color: #00a8ff;
+}
+
+.color-red{
+    background-color: #ec2f2f;
+}
+
+.color-green{
+    background-color: #00c9a7;
+}
+
+.color-yellow{
+    background-color: #f1c40f;
+}
+
+.color-brown{
+    background-color: #a5673f;
+}
