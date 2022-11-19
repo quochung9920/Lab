@@ -1,20 +1,21 @@
+/* Định dạng chung cho các phần tử trong trang web */
 body {
     margin: 0px;
 }
 
 .cv-document {
-	box-sizing: border-box;
-	border: none;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	vertical-align: baseline;
-	text-decoration: none;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	font-family: arial, sans-serif, tahoma;
-	font-size: 10pt;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: arial, sans-serif, tahoma;
+    font-size: 10pt;
 }
 
 .cv-page {
@@ -27,76 +28,100 @@ body {
     width: 900px;
     min-height: 900px;
     margin: 0 auto;
-    box-shadow: 0 0 1px rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
     background-color: #fff;
     position: relative;
-
-    padding: 120px;
+    padding: 40px;
 }
-.section-title{
+
+.section-title {
     text-transform: uppercase;
-    padding-top: 15px;
+    margin: 0;
 }
 
+.session {
+    margin-top: 40px !important;
+}
 
-td, th {
+.cv-page>div {
+    padding-top: 40px;
+}
+
+td,
+th {
     text-align: left;
     vertical-align: top;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.cv-info-header{
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.both {
+    clear: both;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+
+/* Định dạng cho phần tử thuộc phần thông tin */
+.cv-info-header {
     width: 100px;
 }
 
-.cv-info-name{
+.cv-info-name {
     font-size: 25pt;
     font-weight: bold;
     margin-bottom: 10px;
     color: darkslategrey;
-}
-.avatar{
-    position: absolute;
-    width: 120px;
-    top: 150px;
-    right: 120px;
+    margin-top: 0;
 }
 
-.table-3 tr td:first-child, .table-3 tr th:first-child{
-    width: 33%;
+.avatar {
+    width: 120px;
 }
+
+/* Định dạng cho phần tử thuộc phần học vấn và kinh nghiệm làm việc */
 .table-3 {
     width: 100%;
 }
 
-.table-3 tr td, .table-3 tr th{
+.table-3 tr td:first-child,
+.table-3 tr th:first-child {
+    width: 33%;
+}
+
+.table-3 tr td,
+.table-3 tr th {
     border-bottom: 1px solid #eee;
 }
 
-p{
+p {
     margin: 0;
     padding: 0;
 }
 
-ul, ol {
-    padding-left: 20px;
-}
-
+/* Vẽ timeline */
 .container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
 }
+.timeline .table-3 {
 
-.timeline .table-3{
-    
     margin-left: 15px;
 }
-  
-  /* The circles on the timeline */
-  .container::after {
+.container::after {
     content: '';
     position: absolute;
     width: 7px;
@@ -106,17 +131,13 @@ ul, ol {
     top: 8px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
+}
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+}
+.timeline::after {
     content: '';
     position: absolute;
     width: 1px;
@@ -124,4 +145,4 @@ ul, ol {
     top: 0;
     bottom: 0;
     margin-left: 8px;
-  }
+}
