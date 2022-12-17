@@ -1,7 +1,10 @@
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
     #banner{
         height: 750px;
         background-position: 48%;
+    }
+    #nav-bar > nav{
+        margin-left: 20px;
     }
     #nav-bar nav a{
         border: none;
@@ -15,9 +18,5 @@
     }
     #nav-bar nav a img{
         order: 1;
-    }
-
-    #footer ul li span{
-        display: none;
     }
 }

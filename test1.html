@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            color: red;
+        }
+
+        @media screen and (max-width:775px) {
+            p{
+                color: yellow;
+            }
+            .main{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media screen and (max-width: 991px) and (min-width: 776px) {
+            .main{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+    </style>
+    <script>
+        const arr = [1, 2, 3, 4, 5];
+        let sum = 0;
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] % 2 == 0){
+                sum += arr[i];
+            }
+        }
+
+        console.log(sum);
+        
+    </script>
+</head>
+<body>
+    <p>Nguyễn Quốc Hưng</p>
+    <div class="main">
+        <div>
+            <img src="./03-CSS-Fundamentals/img/challenges copy.jpg" alt="image1" />
+        </div>
+        <div>
+            <img src="./03-CSS-Fundamentals/img/laura-jones copy.jpg" alt="image2" />
+        </div>
+        <div>
+            <img src="./03-CSS-Fundamentals/img/post-img copy.jpg" alt="image3" />
+        </div>
+    </div>
+</body>
+</html>
